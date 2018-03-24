@@ -6,6 +6,9 @@ This is the final project for 250a. The requirements of the project were very op
 # Video Example
 The following video is an example of the possibilities of this instrument
 
+https://youtu.be/NeWH3B-6Vik
+
+
 # General Idea
 
 The idea was to use Dual Voic Coil Speakers (DVC) which have a pair of concentric coils driving the same membrane. Most of the time, this type of speaker is driven with quasi-similar signals on both coils to achieve better harmonic distortion values. However in this case, Im using one of the coils as a speaker and the other one as a microphone. The purpose of this is then to use the microphone as a control signal that determines the amplitude of the sound coming out of the speaker itself. Clearly this call for problems with feedback making the system almost unstable by nature.
