@@ -40,6 +40,6 @@ with {
 filtering = fi.peak_eq_cq(-23.0, 95, 0.27) : fi.peak_eq_cq(10.5, 166, 0.64) : fi.low_shelf(2, 890) : fi.high_shelf(-9.5, 2400);
 
 
-voice(n, note) = vgroup("Voice %n", _ : amplitudeTracker : filtering : gen * _ : distortion : delay : fx : master);
+voice(n, note) = vgroup("Voice %n", _ : delay : amplitudeTracker : filtering : gen * _ : distortion : fx : master);
 
 process = tgroup("Voices", par(i, 5, voice(i, 60 + i)));
